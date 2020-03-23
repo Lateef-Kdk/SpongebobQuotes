@@ -19,23 +19,31 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        quoteText = findViewById(R.id.quoteTVID2)
-        spongeBobQuote = findViewById(R.id.quoteETVID2)
+        quoteText = findViewById(R.id.quoteTVID)
+        spongeBobQuote = findViewById(R.id.quoteETVID)
 
-        findViewById<Button>(R.id.buttonID2).setOnClickListener {
+
+
+        findViewById<Button>(R.id.buttonID).setOnClickListener {
            camelCaseKinda()
         }
 
-        findViewById<Button>(R.id.clearButtonID2).setOnClickListener {
+        findViewById<Button>(R.id.clearButtonID).setOnClickListener {
             Toast.makeText(this,"Cleared",Toast.LENGTH_SHORT).show()
             quoteText.text = ""
             spongeBobQuote.text = ""
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+        quoteText.text = ""
+        spongeBobQuote.text = ""
+    }
+
     private fun camelCaseKinda(){
-        var newQuote:String = ""
-        var i = 0;
+        var newQuote = ""
+        var i = 0
         if (!quoteText.text.toString().trim().isEmpty()) {
             for (eachCharacter in quoteText.text.toString()) {
                 newQuote += if (i % 2 == 0) {
