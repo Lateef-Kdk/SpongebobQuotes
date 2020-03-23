@@ -4,7 +4,7 @@
     <string name="type_what_you_want_to_say_below">SpongeBob Quote App</string>
     <string name="clear">Clear</string>
     <string name="new_text_will_show_here">NeW TeXt wIlL ShOw hErE</string>
-    <string name="insert_text_you_wish_to_alter_here">Insert Text You Wish To Alter Here</string>
+    <string name="insert_text_you_wish_to_alter_here">Insert Text You Wish To Alter Here.</string>
     <string name="spongebob_quote_app">Spongebob Quote App</string>
     <string name="spongebob_picture">Spongebob Picture</string>
 </resources>
