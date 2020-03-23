@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
             }
             spongeBobQuote.text = newQuote.trim()
             copyToClipBoard(newQuote)
-            Toast.makeText(this,"New String Pasted to Clipboard",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"The new String has been copied to the clipboard",Toast.LENGTH_SHORT).show()
         }
     }
 
